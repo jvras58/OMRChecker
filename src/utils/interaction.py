@@ -6,7 +6,15 @@ from screeninfo import get_monitors
 from src.logger import logger
 from src.utils.image import ImageUtils
 
-monitor_window = get_monitors()[0]
+# Try to get monitor info, fall back to default values if no display is available
+try:
+    monitor_window = get_monitors()[0]
+except Exception:
+    # Fallback for environments without a display/GUI (e.g., servers)
+    class MonitorFallback:
+        width = 1920
+        height = 1080
+    monitor_window = MonitorFallback()
 
 
 @dataclass
@@ -29,7 +37,10 @@ class InteractionUtils:
         if origin is None:
             logger.info(f"'{name}' - NoneType image to show!")
             if pause:
-                cv2.destroyAllWindows()
+                try:
+                    cv2.destroyAllWindows()
+                except Exception:
+                    pass
             return
         if resize:
             if not config:
@@ -38,46 +49,50 @@ class InteractionUtils:
         else:
             img = origin
 
-        if not is_window_available(name):
-            cv2.namedWindow(name)
+        try:
+            if not is_window_available(name):
+                cv2.namedWindow(name)
 
-        cv2.imshow(name, img)
+            cv2.imshow(name, img)
 
-        if reset_pos:
-            image_metrics.window_x = reset_pos[0]
-            image_metrics.window_y = reset_pos[1]
+            if reset_pos:
+                image_metrics.window_x = reset_pos[0]
+                image_metrics.window_y = reset_pos[1]
 
-        cv2.moveWindow(
-            name,
-            image_metrics.window_x,
-            image_metrics.window_y,
-        )
-
-        h, w = img.shape[:2]
-
-        # Set next window position
-        margin = 25
-        w += margin
-        h += margin
-
-        w, h = w // 2, h // 2
-        if image_metrics.window_x + w > image_metrics.window_width:
-            image_metrics.window_x = 0
-            if image_metrics.window_y + h > image_metrics.window_height:
-                image_metrics.window_y = 0
-            else:
-                image_metrics.window_y += h
-        else:
-            image_metrics.window_x += w
-
-        if pause:
-            logger.info(
-                f"Showing '{name}'\n\t Press Q on image to continue. Press Ctrl + C in terminal to exit"
+            cv2.moveWindow(
+                name,
+                image_metrics.window_x,
+                image_metrics.window_y,
             )
 
-            wait_q()
-            InteractionUtils.image_metrics.window_x = 0
-            InteractionUtils.image_metrics.window_y = 0
+            h, w = img.shape[:2]
+
+            # Set next window position
+            margin = 25
+            w += margin
+            h += margin
+
+            w, h = w // 2, h // 2
+            if image_metrics.window_x + w > image_metrics.window_width:
+                image_metrics.window_x = 0
+                if image_metrics.window_y + h > image_metrics.window_height:
+                    image_metrics.window_y = 0
+                else:
+                    image_metrics.window_y += h
+            else:
+                image_metrics.window_x += w
+
+            if pause:
+                logger.info(
+                    f"Showing '{name}'\n\t Press Q on image to continue. Press Ctrl + C in terminal to exit"
+                )
+
+                wait_q()
+                InteractionUtils.image_metrics.window_x = 0
+                InteractionUtils.image_metrics.window_y = 0
+        except Exception as e:
+            # Handle environment without display (e.g., servers, containers)
+            logger.debug(f"Could not display image '{name}': {str(e)}")
 
 
 @dataclass
