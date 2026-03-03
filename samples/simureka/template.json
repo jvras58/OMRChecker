@@ -1,0 +1,63 @@
+{
+  "pageDimensions": [1013, 1499],
+  "bubbleDimensions": [18, 18],
+  "preProcessors": [
+    {
+      "name": "CropOnMarkers",
+      "options": {
+        "relativePath": "omr_marker.jpg",
+        "sheetToMarkerWidthRatio": 21
+      }
+    }
+  ],
+  "fieldBlocks": {
+    "questoes_1_15": {
+      "fieldType": "QTYPE_MCQ5",
+      "origin": [78, 1033],
+      "bubblesGap": 23,
+      "labelsGap": 25,
+      "bubbleDimensions": [18, 18],
+      "fieldLabels": ["q1..15"]
+    },
+    "questoes_16_30": {
+      "fieldType": "QTYPE_MCQ5",
+      "origin": [238, 1031],
+      "bubblesGap": 23,
+      "labelsGap": 25,
+      "bubbleDimensions": [18, 18],
+      "fieldLabels": ["q16..30"]
+    },
+    "questoes_31_45": {
+      "fieldType": "QTYPE_MCQ5",
+      "origin": [397, 1033],
+      "bubblesGap": 22,
+      "labelsGap": 25,
+      "bubbleDimensions": [17, 17],
+      "fieldLabels": ["q31..45"]
+    },
+    "questoes_46_60": {
+      "fieldType": "QTYPE_MCQ5",
+      "origin": [554, 1031],
+      "bubblesGap": 22,
+      "labelsGap": 25,
+      "bubbleDimensions": [17, 17],
+      "fieldLabels": ["q46..60"]
+    },
+    "questoes_61_75": {
+      "fieldType": "QTYPE_MCQ5",
+      "origin": [711, 1033],
+      "bubblesGap": 22,
+      "labelsGap": 25,
+      "bubbleDimensions": [17, 17],
+      "fieldLabels": ["q61..75"]
+    },
+    "questoes_76_90": {
+      "fieldType": "QTYPE_MCQ5",
+      "origin": [868, 1031],
+      "bubblesGap": 22,
+      "labelsGap": 25,
+      "bubbleDimensions": [17, 17],
+      "fieldLabels": ["q76..90"]
+    }
+  }
+}
