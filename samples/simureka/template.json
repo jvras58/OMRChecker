@@ -1,6 +1,12 @@
 {
-  "pageDimensions": [1013, 1499],
-  "bubbleDimensions": [18, 18],
+  "pageDimensions": [
+    1013,
+    1499
+  ],
+  "bubbleDimensions": [
+    18,
+    18
+  ],
   "preProcessors": [
     {
       "name": "CropOnMarkers",
@@ -13,51 +19,183 @@
   "fieldBlocks": {
     "questoes_1_15": {
       "fieldType": "QTYPE_MCQ5",
-      "origin": [78, 1033],
-      "bubblesGap": 23,
-      "labelsGap": 25,
-      "bubbleDimensions": [18, 18],
-      "fieldLabels": ["q1..15"]
+      "origin": [
+        36,
+        1038
+      ],
+      "bubblesGap": 24,
+      "labelsGap": 27,
+      "bubbleDimensions": [
+        18,
+        18
+      ],
+      "fieldLabels": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10",
+        "q11",
+        "q12",
+        "q13",
+        "q14",
+        "q15"
+      ]
     },
     "questoes_16_30": {
       "fieldType": "QTYPE_MCQ5",
-      "origin": [238, 1031],
-      "bubblesGap": 23,
-      "labelsGap": 25,
-      "bubbleDimensions": [18, 18],
-      "fieldLabels": ["q16..30"]
+      "origin": [
+        207,
+        1038
+      ],
+      "bubblesGap": 24,
+      "labelsGap": 27,
+      "bubbleDimensions": [
+        18,
+        18
+      ],
+      "fieldLabels": [
+        "q16",
+        "q17",
+        "q18",
+        "q19",
+        "q20",
+        "q21",
+        "q22",
+        "q23",
+        "q24",
+        "q25",
+        "q26",
+        "q27",
+        "q28",
+        "q29",
+        "q30"
+      ]
     },
     "questoes_31_45": {
       "fieldType": "QTYPE_MCQ5",
-      "origin": [397, 1033],
-      "bubblesGap": 22,
-      "labelsGap": 25,
-      "bubbleDimensions": [17, 17],
-      "fieldLabels": ["q31..45"]
+      "origin": [
+        377,
+        1038
+      ],
+      "bubblesGap": 24,
+      "labelsGap": 27,
+      "bubbleDimensions": [
+        18,
+        18
+      ],
+      "fieldLabels": [
+        "q31",
+        "q32",
+        "q33",
+        "q34",
+        "q35",
+        "q36",
+        "q37",
+        "q38",
+        "q39",
+        "q40",
+        "q41",
+        "q42",
+        "q43",
+        "q44",
+        "q45"
+      ]
     },
     "questoes_46_60": {
       "fieldType": "QTYPE_MCQ5",
-      "origin": [554, 1031],
-      "bubblesGap": 22,
-      "labelsGap": 25,
-      "bubbleDimensions": [17, 17],
-      "fieldLabels": ["q46..60"]
+      "origin": [
+        547,
+        1038
+      ],
+      "bubblesGap": 24,
+      "labelsGap": 27,
+      "bubbleDimensions": [
+        18,
+        18
+      ],
+      "fieldLabels": [
+        "q46",
+        "q47",
+        "q48",
+        "q49",
+        "q50",
+        "q51",
+        "q52",
+        "q53",
+        "q54",
+        "q55",
+        "q56",
+        "q57",
+        "q58",
+        "q59",
+        "q60"
+      ]
     },
     "questoes_61_75": {
       "fieldType": "QTYPE_MCQ5",
-      "origin": [711, 1033],
-      "bubblesGap": 22,
-      "labelsGap": 25,
-      "bubbleDimensions": [17, 17],
-      "fieldLabels": ["q61..75"]
+      "origin": [
+        715,
+        1041
+      ],
+      "bubblesGap": 24,
+      "labelsGap": 27,
+      "bubbleDimensions": [
+        18,
+        18
+      ],
+      "fieldLabels": [
+        "q61",
+        "q62",
+        "q63",
+        "q64",
+        "q65",
+        "q66",
+        "q67",
+        "q68",
+        "q69",
+        "q70",
+        "q71",
+        "q72",
+        "q73",
+        "q74",
+        "q75"
+      ]
     },
     "questoes_76_90": {
       "fieldType": "QTYPE_MCQ5",
-      "origin": [868, 1031],
-      "bubblesGap": 22,
-      "labelsGap": 25,
-      "bubbleDimensions": [17, 17],
-      "fieldLabels": ["q76..90"]
+      "origin": [
+        885,
+        1043
+      ],
+      "bubblesGap": 24,
+      "labelsGap": 27,
+      "bubbleDimensions": [
+        18,
+        18
+      ],
+      "fieldLabels": [
+        "q76",
+        "q77",
+        "q78",
+        "q79",
+        "q80",
+        "q81",
+        "q82",
+        "q83",
+        "q84",
+        "q85",
+        "q86",
+        "q87",
+        "q88",
+        "q89",
+        "q90"
+      ]
     }
   }
 }
