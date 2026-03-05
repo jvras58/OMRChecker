@@ -1,4 +1,17 @@
 {
+  "threshold_params": {
+    "GAMMA_LOW": 0.7,
+    "MIN_GAP": 30,
+    "MIN_JUMP": 25,
+    "CONFIDENT_SURPLUS": 5,
+    "JUMP_DELTA": 30,
+    "PAGE_TYPE_FOR_THRESHOLD": "white"
+  },
+  "outputs": {
+    "show_image_level": 3,
+    "save_image_level": 1,
+    "save_detections": true
+  },
   "dimensions": {
     "display_height": 2480,
     "display_width": 640,
