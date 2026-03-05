@@ -20,11 +20,11 @@
     "questoes_1_15": {
       "fieldType": "QTYPE_MCQ5",
       "origin": [
-        36,
-        1038
+        40,
+        1041
       ],
       "bubblesGap": 24,
-      "labelsGap": 27,
+      "labelsGap": 26,
       "bubbleDimensions": [
         18,
         18
@@ -50,11 +50,11 @@
     "questoes_16_30": {
       "fieldType": "QTYPE_MCQ5",
       "origin": [
-        207,
-        1038
+        209,
+        1041
       ],
       "bubblesGap": 24,
-      "labelsGap": 27,
+      "labelsGap": 26,
       "bubbleDimensions": [
         18,
         18
@@ -80,11 +80,11 @@
     "questoes_31_45": {
       "fieldType": "QTYPE_MCQ5",
       "origin": [
-        377,
-        1038
+        380,
+        1041
       ],
       "bubblesGap": 24,
-      "labelsGap": 27,
+      "labelsGap": 26,
       "bubbleDimensions": [
         18,
         18
@@ -110,11 +110,11 @@
     "questoes_46_60": {
       "fieldType": "QTYPE_MCQ5",
       "origin": [
-        547,
-        1038
+        551,
+        1041
       ],
       "bubblesGap": 24,
-      "labelsGap": 27,
+      "labelsGap": 26,
       "bubbleDimensions": [
         18,
         18
@@ -140,11 +140,11 @@
     "questoes_61_75": {
       "fieldType": "QTYPE_MCQ5",
       "origin": [
-        715,
+        721,
         1041
       ],
       "bubblesGap": 24,
-      "labelsGap": 27,
+      "labelsGap": 26,
       "bubbleDimensions": [
         18,
         18
@@ -170,11 +170,11 @@
     "questoes_76_90": {
       "fieldType": "QTYPE_MCQ5",
       "origin": [
-        885,
-        1043
+        890,
+        1041
       ],
       "bubblesGap": 24,
-      "labelsGap": 27,
+      "labelsGap": 26,
       "bubbleDimensions": [
         18,
         18
