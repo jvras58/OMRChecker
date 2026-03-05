@@ -9,6 +9,14 @@
   ],
   "preProcessors": [
     {
+      "name": "GaussianBlur",
+      "options": { "kSize": [3, 3], "sigmaX": 0 }
+    },
+    {
+      "name": "Levels",
+      "options": { "low": 0.2, "high": 0.85 }
+    },
+    {
       "name": "CropOnMarkers",
       "options": {
         "relativePath": "omr_marker.jpg",
